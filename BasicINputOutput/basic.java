@@ -1,14 +1,23 @@
 package BasicINputOutput;
 
+import java.util.Scanner;
+
 public class basic {
     public static void main(String[] args) {
-
-        for(int i=0;i<10;i++)
-        {
-            System.out.println("jai jai ram jai siya ram");
-            System.out.println("jai mahabir bikram bajranjinbh");
-
+        Scanner sc=new Scanner(System.in);
+      char ch = sc.next().charAt(0);
+        if(ch >= 'A' && ch <= 'Z'){
+            System.out.print(1);
         }
+
+        else if('a'<=ch&& ch<='z'){
+            System.out.print(0);
+        }
+
+        else{
+            System.out.print(-1);
+        }
+
 
 
     }
